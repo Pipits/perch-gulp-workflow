@@ -32,7 +32,7 @@ gulp.task('minify-js', getTask('minify-js'));
 gulp.task('watch', function (){
 	// compile scss and prefix css if changed
 	gulp.watch('src/scss/**/*.scss', ['sass']);
-	gulp.watch('src/js/**/*.js', ['dev-scripts']);
+	gulp.watch('src/js/**/*.js', ['scripts']);
 	
 	// reload browser if template saved
 	gulp.watch('perch/templates/**/*.html', browserSync.reload);
