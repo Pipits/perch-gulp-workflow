@@ -5,10 +5,8 @@ var runSequence = require('run-sequence');
 var del = plugins.del;
 var browserSync = require('browser-sync').create();
 
-config.newer = false;
-
 function getTask(task) {
-    return require('./gulp/' + task)(gulp, plugins, config);
+    return require('./gulp/' + task)(gulp, plugins);
 }
 
 
